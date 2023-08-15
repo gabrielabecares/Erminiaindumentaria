@@ -1,0 +1,28 @@
+.footerpie {
+    background-color: $colorSecundario;
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+    font-size: 75%;
+    color: #475044;
+    margin-top: 20px;
+    
+            .item-footerpie{
+                list-style-type: none;
+                text-align: right;
+             }
+        
+            .redes{
+                display: flex;
+            }
+
+
+}
+
+@media (max-width:768px){
+    .footerpie{ 
+    background-color: $colorPrincipal;
+    }
+}
+
+

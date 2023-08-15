@@ -1,0 +1,35 @@
+.contenedornosotros{
+    display: flex;
+   padding: 20px;
+   flex-direction: row;
+   flex-wrap:wrap;
+   align-content: center;
+   justify-content: center;
+
+    .nosotrostexto{
+            width: 300px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-content: center;
+            flex-shrink: 1;
+        }
+
+    .nosotrosimagen{
+            padding: 20px;
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-content: center;
+            flex-shrink: 1; 
+            display: flex;
+        
+        }
+}
+
+.imagentaller{
+    width: 100%;
+    border-radius: 1rem;
+}

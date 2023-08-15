@@ -1,0 +1,124 @@
+
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "titulo formulario";
+    justify-content: center;
+
+    .titulo2{
+        grid-area: titulo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        text-align: center;
+        
+    }
+    .formulario{
+        grid-area: formulario;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        margin: 20px;
+    }
+}
+form {
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+} 
+
+form input {
+        margin-bottom: 10px;
+        background: #fff;
+        border: 1px solid #9c9c9c;
+    }
+
+  
+.button{
+    width: 100px;
+    float: right;
+}
+
+form button {
+    background: lightgrey;
+    width: 50px;
+    padding: 3px;
+    border: 0;
+}
+
+form button:hover {
+    background: rgb(190, 214, 206);
+        }  
+  
+
+  label {
+    float: right;
+    width: 200px;
+    padding: 0.5em 0.5em 0.5em 0;
+  }
+
+  input {
+    float: right;
+    width: calc(100% - 200px);
+   
+    input:focus {
+        outline: 3px solid rgb(190, 214, 206);
+      }
+    }
+
+
+
+
+  @media (max-width: 768px) {
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "titulo"
+        "formulario";
+    }
+  }
+
+
+
+    .titulo2{
+        
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    form {
+      overflow: hidden;
+    }
+  
+    label {
+      float: left;
+      width: 200px;
+      padding: 0.5em 0.5em 0.5em 0;
+    }
+  
+    input {
+      float: left;
+      width: calc(100% - 200px);
+    }
+  
+    button {
+      float: right;
+      width: calc(100% - 200px);
+    }

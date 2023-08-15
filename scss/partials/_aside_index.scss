@@ -1,0 +1,55 @@
+.carousel-inner{
+    padding: 20px;
+
+}
+
+.row{
+    background-color: rgb(190, 214, 206);
+    padding: 20px;
+
+    .columna{
+    
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        text-decoration:none;
+        text-align: center;
+        color: #475044;
+        
+    }
+
+
+    .iconos{
+        width:75px;
+        height: 75px;
+        
+    }
+
+
+    .texto{
+        font-size: 75%;
+        color: #6b7a67;
+        text-align: center
+
+    }
+}
+
+@media (max-width:768px){
+    .row{ 
+    background-color: antiquewhite;
+    }
+}
+
+.d-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .btn{
+        text-align: center;
+        width: 400px;
+        padding: 10px;
+        margin: 20px;
+        background-color: #a0af9c;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;        
+    }
+}
